@@ -30,7 +30,7 @@ type GLTFResult = GLTF & {
 }
 
 export function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/public/models/laptop/scene-transformed.glb') as unknown as GLTFResult
+  const { nodes, materials } = useGLTF('/models/laptop/scene-transformed.glb') as unknown as GLTFResult
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_4.geometry} material={materials['Material.002']} position={[-0.929, 0, -0.308]} />
@@ -43,4 +43,4 @@ export function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/public/models/laptop/scene-transformed.glb')
+useGLTF.preload('/models/laptop/scene-transformed.glb')

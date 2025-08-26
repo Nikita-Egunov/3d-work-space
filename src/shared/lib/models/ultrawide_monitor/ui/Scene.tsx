@@ -28,7 +28,7 @@ type GLTFResult = GLTF & {
 }
 
 export function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/public/models/ultrawide_monitor/scene-transformed.glb') as unknown as GLTFResult
+  const { nodes, materials } = useGLTF('/models/ultrawide_monitor/scene-transformed.glb') as unknown as GLTFResult
   return (
     <group {...props} scale={1.5} dispose={null}>
       <mesh geometry={nodes.Ultrawide_Monitor_Screen_0.geometry} material={materials.Screen} rotation={[-Math.PI / 2, 0.001, -Math.PI / 2]} scale={[0.194, 5.362, 2.422]} />
@@ -38,4 +38,4 @@ export function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/public/models/ultrawide_monitor/scene-transformed.glb')
+useGLTF.preload('/models/ultrawide_monitor/scene-transformed.glb')

@@ -35,7 +35,7 @@ const screenOffMaterial = new THREE.MeshStandardMaterial({
 })
 
 export function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/public/models/laptop_2/scene-transformed.glb') as unknown as GLTFResult
+  const { nodes, materials } = useGLTF('/models/laptop_2/scene-transformed.glb') as unknown as GLTFResult
   return (
     <group {...props} scale={0.03} dispose={null}>
       <mesh geometry={nodes['podstawa_Material_#28_0'].geometry} material={materials.Material_28} position={[-50.569, 1.532, 47.852]} rotation={[-Math.PI / 2, 0, 0]} scale={[4.269, 5.129, 1]} />
@@ -53,4 +53,4 @@ export function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/public/models/laptop_2/scene-transformed.glb')
+useGLTF.preload('/models/laptop_2/scene-transformed.glb')
