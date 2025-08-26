@@ -1,5 +1,4 @@
 import { OrbitControls } from "@react-three/drei";
-import { AxesHelper } from "../../features/debug/axesHelper";
 import { Light } from "../../features/light";
 import { Room } from "../../features/room";
 import { type ThreeElement } from "@react-three/fiber";

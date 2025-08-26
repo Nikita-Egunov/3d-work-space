@@ -1,7 +1,5 @@
-import { useHelper } from "@react-three/drei"
 import { useRef } from "react"
 import { RectAreaLight } from "three"
-import { RectAreaLightHelper } from "three/examples/jsm/Addons.js"
 
 export default function Light() {
   const rectAreaLight = useRef<RectAreaLight>(null!)
