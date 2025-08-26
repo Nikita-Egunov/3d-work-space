@@ -24,7 +24,7 @@ type GLTFResult = GLTF & {
 }
 
 export function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/models/table/scene-transformed.glb') as unknown as GLTFResult
+  const { nodes, materials } = useGLTF('/3d-work-space/models//table/scene-transformed.glb') as unknown as GLTFResult
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.defaultMaterial.geometry} material={materials.Folding_Table} scale={0.973} />
@@ -32,4 +32,4 @@ export function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/models/table/scene-transformed.glb')
+useGLTF.preload('/3d-work-space/models//table/scene-transformed.glb')

@@ -20,7 +20,7 @@ type GLTFResult = GLTF & {
 }
 
 export function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/models/gaming_chair/scene-transformed.glb') as unknown as GLTFResult
+  const { nodes, materials } = useGLTF('/3d-work-space/models//gaming_chair/scene-transformed.glb') as unknown as GLTFResult
 
   // Создаем модифицированный материал с белым цветом
   const whiteStripesMaterial = useMemo(() => {
@@ -40,4 +40,4 @@ export function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/models/gaming_chair/scene-transformed.glb')
+useGLTF.preload('/3d-work-space/models//gaming_chair/scene-transformed.glb')

@@ -24,7 +24,7 @@ type GLTFResult = GLTF & {
 }
 
 export function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/models/white_shelf/scene-transformed.glb') as unknown as GLTFResult
+  const { nodes, materials } = useGLTF('/3d-work-space/models//white_shelf/scene-transformed.glb') as unknown as GLTFResult
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_4.geometry} material={materials['Scene_-_Root']} position={[0.448, 0.86, 0]} rotation={[-Math.PI, 0, -Math.PI]} scale={[-0.026, 0.026, 0.299]} />
@@ -32,4 +32,4 @@ export function Model(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-useGLTF.preload('/models/white_shelf/scene-transformed.glb')
+useGLTF.preload('/3d-work-space/models//white_shelf/scene-transformed.glb')
