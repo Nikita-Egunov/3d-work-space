@@ -1,7 +1,5 @@
 # 3D Work Space
 
-![Demo](https://Nikita-Egunov.github.io/3d-work-space/)
-
 3D Work Space is a 3D visualization of a workspace environment created using React, Three.js, and React-Three-Fiber. This project showcases a virtual room with various objects like a table, laptop, monitor, bookshelf, and more.
 
 ## Features
